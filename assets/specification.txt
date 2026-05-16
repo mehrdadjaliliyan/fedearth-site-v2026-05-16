@@ -1,0 +1,181 @@
+You are a senior full-stack developer, product designer, and system architect.
+
+Your task is to design and generate a complete, production-ready web platform based on the following concept and documents:
+
+The platform is a digital system for a “Federation of Earth” based on principles of direct democracy, decentralization, and community-driven governance.
+
+You MUST carefully interpret and translate the concepts from the provided documents into functional product features, UX flows, and system architecture.
+
+
+CORE CONCEPTS (IMPORTANT)
+
+
+The platform must implement:
+
+1. Direct democracy mechanisms:
+   - Voting system (global and community-level)
+   - Referendums:
+     - Mandatory referendums
+     - Facultative referendums (triggered by threshold % of users)
+   - Popular initiatives (users can propose topics and gather support)
+
+2. Community-driven structure:
+   - Multiple independent communities (local, regional, global)
+   - Bottom-up governance model
+   - Decentralized structure where communities operate independently
+
+3. Representation system:
+   - Ability to elect representatives
+   - Representatives can make decisions BUT:
+     - Their decisions can be overridden by referendums
+
+4. Fundamental rights protection:
+   - System must enforce user rights:
+     - Privacy
+     - Freedom of expression
+     - Equality
+   - Include safeguards and moderation logic aligned with these principles
+
+5. Transparency:
+   - All decisions, votes, and actions must be visible and auditable
+
+
+FUNCTIONAL REQUIREMENTS
+
+
+Design a modern web application with the following modules:
+
+1. Authentication:
+   - Sign up / Login
+   - Secure authentication (JWT or similar)
+   - User roles (member, moderator, representative, admin)
+
+2. User Profile:
+   - Personal info
+   - Community memberships
+   - Voting history (public or private toggle)
+   - Reputation / participation metrics
+
+3. Communities:
+   - Create / join communities
+   - Community pages with:
+     - Description
+     - Members
+     - Governance rules
+   - Each community operates semi-independently
+
+4. Proposals & Initiatives:
+   - Users can create proposals
+   - Other users can support (signature system)
+   - Threshold-based activation (e.g. 3–5%)
+   - Time-limited campaigns
+
+5. Voting System:
+   - Create ballots
+   - Voting types:
+     - Yes / No
+     - Multiple choice
+   - Display results transparently
+   - Real-time or scheduled voting
+
+6. Referendum System:
+   - Mandatory referendum logic
+   - Facultative referendum triggered by threshold
+   - Ability to veto decisions
+
+7. Representatives Module:
+   - Elect representatives
+   - Assign roles
+   - Track decisions made by representatives
+
+8. Discussions:
+   - Threaded discussions per proposal
+   - Comments and replies
+   - Upvote / downvote system
+
+9. Notifications:
+   - New proposals
+   - Voting reminders
+   - Community updates
+
+10. Admin Panel:
+   - Manage users
+   - Manage communities
+   - Moderate content
+   - System analytics
+
+
+TECHNICAL REQUIREMENTS
+
+
+- Frontend:
+  - React (Next.js preferred)
+  - Clean, modern UI (Tailwind CSS)
+  - Mobile responsive
+
+- Backend:
+  - Node.js (or serverless/Firebase/Supabase)
+  - REST or GraphQL API
+
+- Database:
+  - PostgreSQL or NoSQL (depending on design)
+  - Must support:
+    - Users
+    - Communities
+    - Votes
+    - Proposals
+    - Representatives
+
+- Real-time features:
+  - WebSockets or Firebase for live voting updates
+
+- Security:
+  - Role-based access control
+  - Data validation
+  - Protection against vote manipulation
+
+
+UX / UI REQUIREMENTS
+
+
+- Clean, minimal, and professional
+- Dashboard-centric design
+- Clear flows:
+  - Join → Participate → Propose → Vote
+- Visual indicators:
+  - Voting progress bars
+  - Support thresholds
+  - Participation stats
+
+
+OUTPUT FORMAT
+
+
+Provide:
+
+1. Full system architecture (diagram + explanation)
+2. Database schema
+3. API structure
+4. Complete UI pages list
+5. Component breakdown
+6. Sample UI (wireframes or code)
+7. Core logic for:
+   - Voting
+   - Referendum triggering
+   - Initiative threshold system
+
+OPTIONALLY:
+- Generate starter codebase
+- Suggest deployment (Vercel, AWS, etc.)
+
+
+
+IMPORTANT:
+Do NOT simplify the system. Preserve the logic of direct democracy, including:
+- Threshold-based participation
+- Referendum override mechanisms
+- Decentralized community structure
+
+This is NOT a generic social network. It is a governance platform.
+
+Think deeply and design like a real-world scalable system.

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -sS -o /tmp/fedearth_home.html -w \"HTTP %{http_code} · %{size_download} bytes · %{time_total}s\\\\n\" http://localhost:3000/)",
+      "Bash(curl -sS -o /tmp/fedearth_legal.html -w \"LEGAL: HTTP %{http_code} · %{size_download} bytes\\\\n\" http://localhost:3000/legal)",
+      "Read(//tmp/**)",
+      "Bash(curl -sS -o /tmp/fedearth_v2.html -w \"HTTP %{http_code} · %{size_download} bytes\\\\n\" http://localhost:3000/)",
+      "Bash(open http://localhost:3000)",
+      "Bash(curl -sS -X POST http://localhost:3000/api/applications -H \"Content-Type: application/json\" -d '{\"kind\":\"member\",\"fullName\":\"Ada Lovelace\",\"email\":\"ada@example.com\",\"reason\":\"Testing the email pipeline\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -sS -o /tmp/fedearth_v3.html -w \"HTTP %{http_code} · %{size_download} bytes\\\\n\" http://localhost:3000/)",
+      "Bash(curl -sS -o /tmp/v4.html -w \"HTTP %{http_code} · %{size_download} bytes\\\\n\" http://localhost:3000/)",
+      "Bash(curl -sS -X POST http://localhost:3000/api/applications -H \"Content-Type: application/json\" -d '{\"kind\":\"member\",\"fullName\":\"Ada Lovelace\",\"email\":\"ada@example.org\",\"reason\":\"End-to-end pipeline test\",\"consent\":true}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -sS http://localhost:3000/)",
+      "Bash(zip *)"
+    ]
+  }
+}
