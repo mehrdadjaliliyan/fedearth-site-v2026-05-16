@@ -362,4 +362,3 @@ For technical support or questions about using the platform, refer to:
 **Built with ❤️ for direct democracy and transparent governance**
 
 *Founded November 7, 2025 in Zug, Switzerland*
-# fedearth-site-v2026-05-16
