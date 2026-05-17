@@ -55,7 +55,7 @@ export default function LinksPage() {
         eyebrow="Connect"
         title="Follow"
         accent="the Chairman."
-        intro="Personal accounts of Ali Mizani Oskui — Chairman of the Federation of Earth."
+        intro="Personal accounts of Ali Mizani Oskui — Board President of the Federation of Earth."
       />
 
       <section className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
@@ -65,7 +65,7 @@ export default function LinksPage() {
           index="01"
           eyebrow="Personal Social Media"
           title="Ali Mizani Oskui"
-          subtitle="Chairman · Federation of Earth"
+          subtitle="Board President · Federation of Earth"
         />
 
         <ul className="relative mt-8 grid gap-3 sm:grid-cols-2">
