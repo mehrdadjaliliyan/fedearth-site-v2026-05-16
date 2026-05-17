@@ -54,7 +54,7 @@ export default function LinksPage() {
       <PageHeader
         eyebrow="Connect"
         title="Follow"
-        accent="the Chairman."
+        accent="Fedearth."
         intro="Personal accounts of Ali Mizani Oskui — Board President of the Federation of Earth."
       />
 
